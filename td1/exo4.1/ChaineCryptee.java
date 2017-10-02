@@ -14,7 +14,7 @@ public class ChaineCryptee
     /**
      * Constructeur d'objets de classe ChaineCryptee
      */
-    public ChaineCryptee(String ChaineClair, int Decalage)
+    private ChaineCryptee(String ChaineClair, int Decalage)
     {
         decalage = Decalage;
         chaineClair = ChaineClair;
