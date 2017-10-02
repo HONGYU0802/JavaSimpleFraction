@@ -13,11 +13,13 @@ public class ChaineCryptee
 
     /**
      * Constructeur d'objets de classe ChaineCryptee
+     * Si la Chaine est vide (= null) je l'initialise a "A" par default
      */
     private ChaineCryptee(String ChaineClair, int Decalage)
     {
         decalage = Decalage;
         chaineClair = ChaineClair;
+        if (chaineClair == null) { chaineClair = "A"; }
     }
 
     /**
