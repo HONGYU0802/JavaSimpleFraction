@@ -17,6 +17,6 @@ public class Fraction
 	@Override
 	public String toString()
 	{
-		return Double.valueOf(a).toString() + " " + Double.valueOf(a).toString();
+		return Double.valueOf(a).toString() + " " + Double.valueOf(b).toString();
 	}
 }
