@@ -7,29 +7,29 @@
  */
 public class Serveur
 {
-    // variables d'instance - remplacez l'exemple qui suit par le vôtre
-    
+    private ArrayList<Client> clients;
 
-    /**
-     * Constructeur d'objets de classe Serveur
-     */
     public Serveur()
     {
+        clients = new ArrayList<Client>();
     }
 
-    /**
-     * Un exemple de méthode - remplacez ce commentaire par le vôtre
-     *
-     * @param  y   le paramètre de la méthode
-     * @return     la somme de x et de y
-     */
-    public connecter(client inclient)
+    public boolean connecter(Client client)
     {
-        boolean connecte;
+        if(clients.contains(client)) {
+            return false;
+        }
+        else {
+            return clients.add(client);
+        }
     }
     
-    public diffuser(String inmesssage)
+    public void diffuser(String message)
     {
-        //appele la FN recevoir de chaque client
+        Iterator<Client> liste = clients.iterator();
+        
+        while(liste.hasNext()) {
+            liste.next().recevoir(message);
+        }
     }
 }

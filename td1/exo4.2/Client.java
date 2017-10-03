@@ -27,9 +27,16 @@ public class Client
      */
     public seconnecter(Serveur s)
     {
-        this.inserveur = s;
-        return inserveur.connecter(this);
+        boolean ok = s.connecter(this);
+        if(ok == false) 
+            return false;
+        else {
+            inserveur = s;
+            return true;
+        }
     }
+    
+
     
     public envoyer(String message)
     {
