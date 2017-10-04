@@ -1,8 +1,8 @@
 #BlueJ package file
-editor.fx.0.height=732
-editor.fx.0.width=806
-editor.fx.0.x=133
-editor.fx.0.y=36
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 objectbench.height=153
 objectbench.width=770
 package.divider.horizontal=0.6
@@ -36,7 +36,7 @@ target2.name=Repertoire
 target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
-target2.width=90
+target2.width=100
 target2.x=120
 target2.y=160
 target3.height=50
