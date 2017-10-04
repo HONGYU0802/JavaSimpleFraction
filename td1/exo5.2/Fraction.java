@@ -83,6 +83,11 @@ public class Fraction
         return false;
     }
     
+    public String toString()
+    {
+        return (this.num + "/" + this.denom);
+    }
+    
     //return 1 si 1er plus grand sinon 2 
     public int compare (Fraction f,Fraction f2)
     {
