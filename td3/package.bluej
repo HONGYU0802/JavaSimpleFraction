@@ -31,6 +31,7 @@ target2.editor.x=70
 target2.editor.y=50
 target2.height=50
 target2.name=CompteTest
+target2.naviview.expanded=true
 target2.showInterface=false
 target2.type=UnitTestTargetJunit4
 target2.typeParameters=
